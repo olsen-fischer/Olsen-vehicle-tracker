@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Tracker (TypeScript)</title>
+</head>
+<body>
+  <h1>Vehicle Tracker</h1>
+  <form id="vehicle-form">
+    <select id="vehicle-type">
+      <option value="car">Car</option>
+      <option value="bus">Bus</option>
+      <option value="truck">Truck</option>
+    </select>
+    <input id="make" placeholder="Make" />
+    <input id="model" placeholder="Model" />
+    <input id="extra" placeholder="Seats / Payload / Max Load" />
+    <button type="submit">Add Vehicle</button>
+  </form>
+
+  <div style="margin-top: 1em">
+    <label>Filter: </label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="car">Car</option>
+      <option value="bus">Bus</option>
+      <option value="truck">Truck</option>
+    </select>
+    <button id="clear" type="button">Clear All</button>
+  </div>
+
+  <ul id="vehicle-list"></ul>
+
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
