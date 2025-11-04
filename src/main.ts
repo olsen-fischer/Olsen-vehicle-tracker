@@ -1,6 +1,6 @@
-import { Vehicle } from './vehicle';
-import { VehicleStore } from './vehiclestore';
-import { Renderer } from './ui/renderer';
+import { Vehicle } from './vehicle.js';
+import { VehicleStore } from './vehiclestore.js';
+import { Renderer } from './ui/renderer.js';
 
 const store = new VehicleStore<Vehicle>();
 const renderer = new Renderer('vehicle-list');
